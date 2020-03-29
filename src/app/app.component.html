@@ -1,12 +1,12 @@
 <div class="container">  
-  <h6>Cadastro de pessoas</h6>  
-  <form ngForm name="titulo">
-    <label id="label">Nome</label>
-    <input id="input" type="text" [(ngModel)]= 'pessoas' name='pessoas'>
-    <button id="buttonOk" (click)='cadastrar()'>Ok</button>
-  </form>
-  <h6>Pessoas Cadastradas</h6>
-  <ul>
-    <li id="li" *ngFor='let p of lista'> {{p}} </li>      
-  </ul>
+    <h5> <b> Cadastro de pessoas </b> </h5>
+    <form ngForm name="titulo">
+        <label id="labelName" for="input">Nome</label>
+        <input id="input" type="text"  [(ngModel)]= 'pessoas' name='pessoas'>
+        <button id="buttonOk" (click)='cadastrar()'>ok</button>
+    </form>
+    <h5> <b> Pessoas cadastradas </b> </h5>
+    <ul *ngFor='let p of lista'>
+        <li>{{p}}</li>
+    </ul>
 </div>  

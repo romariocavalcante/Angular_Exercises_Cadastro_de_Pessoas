@@ -1,18 +1,25 @@
 .container{
-    width: 300px;
+    width: 25%;
     margin-top: 5%;
-    padding-top: 20px;
+    padding: 2%;
     border: 1px solid black;
 }
 
-#label{
-    margin-right: 1%;
+#input{
+    width: 70%;
+    outline: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 2%;
 }
 
-button{
+li{
+    margin-left: 2%;
+}
+
+#buttonOk{
     margin-left: 1%;
-}
-
-#li{
-    list-style-type: square;
+    font-size: 14px;
 }

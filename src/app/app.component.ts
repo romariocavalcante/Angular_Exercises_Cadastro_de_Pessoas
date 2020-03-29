@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent{
-  title = 'projeto';
   pessoas = null;
-  lista =[]
+  lista =[];
+  
   cadastrar(){
     if(this.pessoas != null ){
       this.pessoas = this.pessoas.trim();
