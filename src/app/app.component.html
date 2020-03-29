@@ -6,12 +6,7 @@
         <button id="buttonOk" (click)='cadastrar()'>ok</button>
     </form>
     <h5> <b> Pessoas cadastradas </b> </h5>
-    <table>
-        <th> Nome </th>
-        <th> Excluir </th>
-        <tr *ngFor="let p of lista">
-            <td id="td1">{{p}}</td>
-            <td id="td2"> <button id="buttonDelete" (click)="remover(p)"> x </button> </td>
-        </tr>
-    </table>
-</div>
+    <ul *ngFor='let p of lista'>
+        <li>{{p}}</li>
+    </ul>
+</div>  
