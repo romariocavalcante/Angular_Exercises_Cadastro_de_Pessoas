@@ -18,4 +18,9 @@ export class AppComponent{
     }
     this.pessoas = null;
   }
+
+  remover(pessoa){
+    const i = this.lista.indexOf(pessoa);
+    this.lista.splice(i, 1);
+  }
 }
