@@ -1,12 +1,24 @@
 <div class="container">  
     <h5> <b> Cadastro de pessoas </b> </h5>
-    <form ngForm name="titulo">
-        <label id="labelName" for="input">Nome</label>
-        <input id="input" type="text"  [(ngModel)]= 'pessoas' name='pessoas'>
+    <form ngForm>
+        <label> Nome </label>
+        <input id="inputName" type="text" [(ngModel)]= 'nome' name='nome'><br>
+        <label> idade </label>
+        <input id="inputIdade" type="number" [(ngModel)]= 'idade' name='idade'>
         <button id="buttonOk" (click)='cadastrar()'>ok</button>
     </form>
     <h5> <b> Pessoas cadastradas </b> </h5>
-    <ul *ngFor='let p of lista'>
-        <li>{{p}}</li>
-    </ul>
-</div>  
+    <table>
+        <th id="th1"> Nome </th>
+        <th id="th2"> idade </th>
+        <th id="th3"> Excluir </th>
+        <tr *ngFor="let p of lista">
+            <td id="td1">{{p.nome}}</td>
+            <td id="td2">{{p.idade}}</td>
+            <td id="td3"> <button id="buttonDelete" (click)="remover(p)"> x </button> </td>
+        </tr>
+    </table>
+    <div class="statistics"> Total de pessoas cadastradas: {{lista.length}} </div>
+    <div class="statistics"> Pessoa mais jovem: {{pessoaMaisJovem?.nome}}, com {{pessoaMaisJovem?.idade}} anos </div>
+    <div class="statistics"> Pessoa mais idosa: {{pessoaMaisVelha?.nome}}, com {{pessoaMaisVelha?.idade}} anos </div>
+</div>

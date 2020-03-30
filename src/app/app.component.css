@@ -5,7 +5,7 @@
     border: 1px solid black;
 }
 
-#input{
+#inputName{
     width: 70%;
     outline: none;
     padding-left: 2%;
@@ -15,6 +15,15 @@
     margin-left: 2%;
 }
 
+#inputIdade{
+    width: 20%;
+    outline: none;
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-bottom: 4%;
+    margin-left: 3%;
+}
+
 li{
     margin-left: 2%;
 }
@@ -22,4 +31,59 @@ li{
 #buttonOk{
     margin-left: 1%;
     font-size: 14px;
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#th1{
+    width: 65%;
+}
+
+#th2{
+    width: 16%;
+}
+
+#th3{
+    width: 19%;
+}
+
+td{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+#td1{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#td2{
+    text-align: center;
+}
+
+#td3{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#buttonDelete{
+    width: 80%;
+    height: 20px;
+    font-size: 11px; 
+}
+
+.statistics{
+    margin-top: 2%;
 }
