@@ -23,3 +23,45 @@ li{
     margin-left: 1%;
     font-size: 14px;
 }
+<<<<<<< Updated upstream
+=======
+
+table, th, td{;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 100%;
+}
+
+th{
+    width: 81%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+td{
+    padding-top: 1%;
+    padding-bottom: .5%;
+}
+
+#td1{
+    padding-left: 2%;
+}
+
+#td2{
+    text-align: center;
+    vertical-align: middle;
+}
+
+#buttonDelete{
+    width: 80%;
+    height: 20px;
+    font-size: 11px; 
+}
+
+.statistics{
+    margin-top: 2%;
+}
+>>>>>>> Stashed changes
